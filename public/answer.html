@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let Me Use an LLM For You</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="gpt-body">
+
+    <div id="cursor">👆</div>
+    <div id="tutorial-text-container"><p id="tutorial-text"></p></div>
+
+    <div class="gpt-container">
+        <!-- Static Sidebar for appearance -->
+        <aside class="gpt-sidebar">
+            <div class="sidebar-new-chat">+ New chat</div>
+            <div class="sidebar-history">
+                <div class="sidebar-item">Old Question...</div>
+                <div class="sidebar-item">Another Old Question...</div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="gpt-main">
+            <div class="gpt-chat-area" id="chat-messages">
+                <!-- GPT Welcome Message -->
+                <div class="gpt-message">
+                    <div class="gpt-avatar"></div>
+                    <div class="gpt-message-content">
+                        <p>Hello! How can I help you today?</p>
+                    </div>
+                </div>
+                 <!-- User message will be injected here -->
+            </div>
+
+            <div class="gpt-input-area">
+                <div class="gpt-input-wrapper">
+                    <input type="text" id="chat-input" placeholder="Just type it here..." readonly>
+                    <button id="send-button" aria-label="Send message">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 11L12 6L17 11M12 18V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                </div>
+                <p class="gpt-footer-text">This is a non-functional interface clone for demonstration purposes only.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/answer.js"></script>
+</body>
+</html>

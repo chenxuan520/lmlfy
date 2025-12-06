@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let Me LLM That For You</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Let Me LLM That For You</h1>
+        <p>输入一个问题，然后把生成的链接分享给你的朋友。</p>
+
+        <form id="main-form">
+            <div class="form-group">
+                <label for="question">你的问题:</label>
+                <textarea id="question" name="question" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="engine">选择一个AI引擎:</label>
+                <select id="engine" name="engine">
+                    <option value="perplexity" selected>Perplexity AI</option>
+                    <option value="tiangong">天工AI</option>
+                    <option value="baidu">百度 (Baidu)</option>
+                    <option value="so360">360 AI搜索</option>
+                    <option value="you">You.com</option>
+                    <option value="phind">Phind</option>
+                    <option value="brave">Brave Search</option>
+                </select>
+            </div>
+
+            <button type="submit">生成链接</button>
+        </form>
+
+        <div id="result-container" class="hidden">
+            <p>已生成链接！复制并分享吧：</p>
+            <input type="text" id="result-link" readonly>
+            <button id="copy-button">复制</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
