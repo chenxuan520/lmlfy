@@ -22,11 +22,11 @@ This is a fun little tool that generates a "Let Me LLM That For You" link. It's 
 
 ## 在线演示 (Live Demo)
 
-你可以在这里查看在线演示：[https://chenxuan520.github.io/lmlfy/public/](https://chenxuan520.github.io/lmlfy/public/)
+你可以在这里查看在线演示：[https://chenxuan520.github.io/lmlfy/](https://chenxuan520.github.io/lmlfy/)
 
 ---
 
-You can see a live demo here: [https://chenxuan520.github.io/lmlfy/public/](https://chenxuan520.github.io/lmlfy/public/)
+You can see a live demo here: [https://chenxuan520.github.io/lmlfy/](https://chenxuan520.github.io/lmlfy/)
 
 ## 仓库 (Repository)
 
