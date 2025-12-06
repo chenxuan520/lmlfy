@@ -22,15 +22,19 @@ This is a fun little tool that generates a "Let Me LLM That For You" link. It's 
 
 ## 在线演示 (Live Demo)
 
-你可以在这里查看在线演示：[https://your-website.com/lmlfy/public/](https://your-website.com/lmlfy/public/)
-
-**(请将上面的链接替换为你的实际部署地址。)**
+你可以在这里查看在线演示：[https://chenxuan520.github.io/lmlfy/public/](https://chenxuan520.github.io/lmlfy/public/)
 
 ---
 
-You can see a live demo here: [https://your-website.com/lmlfy/public/](https://your-website.com/lmlfy/public/)
+You can see a live demo here: [https://chenxuan520.github.io/lmlfy/public/](https://chenxuan520.github.io/lmlfy/public/)
 
-**(Please replace the link above with your actual deployment address.)**
+## 仓库 (Repository)
+
+你可以在这里查看仓库：[https://github.com/chenxuan520/lmlfy](https://github.com/chenxuan520/lmlfy)
+
+---
+
+You can see the repository here: [https://github.com/chenxuan520/lmlfy](https://github.com/chenxuan520/lmlfy)
 
 ## 文件结构 (File Structure)
 
