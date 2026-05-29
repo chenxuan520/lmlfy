@@ -20,14 +20,27 @@
             <div class="form-group">
                 <label for="engine">选择一个AI引擎:</label>
                 <select id="engine" name="engine">
-                    <option value="perplexity" selected>Perplexity AI</option>
-                    <option value="tiangong">天工AI</option>
-                    <option value="baidu">百度 (Baidu)</option>
-                    <option value="so360">360 AI搜索</option>
-                    <option value="you">You.com</option>
-                    <option value="phind">Phind</option>
-                    <option value="brave">Brave Search</option>
+                    <optgroup label="✅ 跳转后自动出答案 (推荐)">
+                        <option value="perplexity" selected>Perplexity AI</option>
+                        <option value="grok">Grok</option>
+                        <option value="bing">Bing Copilot</option>
+                        <option value="metaso">秘塔AI搜索 (Metaso)</option>
+                        <option value="felo">Felo</option>
+                        <option value="tiangong">天工AI</option>
+                        <option value="you">You.com</option>
+                        <option value="phind">Phind</option>
+                        <option value="brave">Brave Search</option>
+                        <option value="so360">360 AI搜索</option>
+                        <option value="baidu">百度 (Baidu)</option>
+                    </optgroup>
+                    <optgroup label="需对方再点一次发送">
+                        <option value="chatgpt">ChatGPT</option>
+                        <option value="gemini">Google Gemini</option>
+                        <option value="claude">Claude</option>
+                        <option value="deepseek">DeepSeek</option>
+                    </optgroup>
                 </select>
+                <small class="field-hint">“✅”组跳转后会直接显示答案；ChatGPT、Gemini、Claude、DeepSeek 因官方安全限制只能预填问题，需要对方再点一次发送。</small>
             </div>
 
             <button type="submit">生成链接</button>

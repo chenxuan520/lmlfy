@@ -8,27 +8,80 @@
 </head>
 <body class="gpt-body">
 
-    <div id="cursor">👆</div>
+    <div id="cursor">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M5.5 3.2L18.7 11.1c.6.36.46 1.27-.22 1.43l-5.3 1.24a1 1 0 0 0-.7.56l-2.3 5.02c-.3.64-1.24.55-1.4-.14L5.0 4.27c-.16-.7.62-1.24 1.2-.9" fill="#ffffff" stroke="#1f1f1f" stroke-width="1.3" stroke-linejoin="round"/>
+        </svg>
+    </div>
     <div id="tutorial-text-container"><p id="tutorial-text"></p></div>
 
     <div class="gpt-container">
         <!-- Static Sidebar for appearance -->
         <aside class="gpt-sidebar">
-            <div class="sidebar-new-chat">+ New chat</div>
+            <div class="sidebar-top">
+                <span class="sidebar-logo" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"/></svg>
+                </span>
+                <button class="sidebar-icon-btn" aria-label="Collapse sidebar" tabindex="-1">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16"/></svg>
+                </button>
+            </div>
+
+            <nav class="sidebar-nav">
+                <button class="sidebar-link" tabindex="-1">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.12 2.12 0 0 1 3 3L12 15l-4 1 1-4Z"/></svg>
+                    <span>New chat</span>
+                </button>
+                <button class="sidebar-link" tabindex="-1">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+                    <span>Search chats</span>
+                </button>
+                <button class="sidebar-link" tabindex="-1">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18M3 12h18M3 19h18"/></svg>
+                    <span>Library</span>
+                </button>
+            </nav>
+
             <div class="sidebar-history">
-                <div class="sidebar-item">Old Question...</div>
-                <div class="sidebar-item">Another Old Question...</div>
+                <div class="sidebar-section-label">Today</div>
+                <div class="sidebar-item" tabindex="-1">怎么才能把头发养好？</div>
+                <div class="sidebar-item" tabindex="-1">用一句话解释量子计算</div>
+                <div class="sidebar-item" tabindex="-1">周末适合去哪里玩</div>
+                <div class="sidebar-section-label">Yesterday</div>
+                <div class="sidebar-item" tabindex="-1">帮我写一封请假邮件</div>
+                <div class="sidebar-item" tabindex="-1">Python 怎么读取 CSV 文件</div>
+                <div class="sidebar-item" tabindex="-1">番茄炒蛋的做法</div>
+            </div>
+
+            <div class="sidebar-account" tabindex="-1">
+                <span class="account-avatar">Y</span>
+                <span class="account-name">You</span>
             </div>
         </aside>
 
         <!-- Main Content -->
         <main class="gpt-main">
+            <header class="gpt-topbar">
+                <button class="topbar-model" tabindex="-1">
+                    ChatGPT
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <div class="topbar-right">
+                    <button class="topbar-btn" aria-label="Share" tabindex="-1">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><polyline points="16 6 12 2 8 6"/><line x1="12" x2="12" y1="2" y2="15"/></svg>
+                    </button>
+                    <span class="topbar-avatar">Y</span>
+                </div>
+            </header>
+
             <div class="gpt-chat-area" id="chat-messages">
                 <!-- GPT Welcome Message -->
                 <div class="gpt-message">
-                    <div class="gpt-avatar"></div>
+                    <div class="gpt-avatar">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"/></svg>
+                    </div>
                     <div class="gpt-message-content">
-                        <p>Hello! How can I help you today?</p>
+                        <p>有什么可以帮到你的吗？</p>
                     </div>
                 </div>
                  <!-- User message will be injected here -->
@@ -36,14 +89,30 @@
 
             <div class="gpt-input-area">
                 <div class="gpt-input-wrapper">
-                    <input type="text" id="chat-input" placeholder="Just type it here..." readonly>
-                    <button id="send-button" aria-label="Send message">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 11L12 6L17 11M12 18V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </button>
+                    <input type="text" id="chat-input" placeholder="询问任何问题" readonly>
+                    <div class="input-toolbar">
+                        <div class="input-tools">
+                            <button class="tool-btn" aria-label="Add" tabindex="-1">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                            </button>
+                            <button class="tool-btn tool-btn-pill" tabindex="-1">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>
+                                <span>工具</span>
+                            </button>
+                        </div>
+                        <div class="input-tools">
+                            <button class="tool-btn" aria-label="Dictate" tabindex="-1">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+                            </button>
+                            <button id="send-button" aria-label="Send message" tabindex="-1">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <p class="gpt-footer-text">This is a non-functional interface clone for demonstration purposes only.</p>
+                <p class="gpt-footer-text">本页面为演示用的界面仿制，并非真实 ChatGPT。</p>
             </div>
         </main>
     </div>
